@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_sensors"
+            android:icon="@drawable/ic_attachment"
+            android:title="@string/nav_item_sensors" />
+        <item
+            android:id="@+id/navigation_item_relay"
+            android:icon="@drawable/ic_image"
+            android:title="@string/nav_item_relay" />
+        <item
+            android:id="@+id/navigation_item_date_time"
+            android:icon="@drawable/ic_place"
+            android:title="@string/nav_item_date_time" />
+        <item
+            android:id="@+id/navigation_item_about"
+            android:icon="@drawable/ic_place"
+            android:title="@string/nav_item_about" />
+    </group>
+
+
+
+</menu>

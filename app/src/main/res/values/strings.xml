@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Smart Plug</string>
+
+    <string name="activity_relay_plan">Relay Plans</string>
+    <string name="activity_sensors_title">Sensors Value</string>
+    <string name="activity_date_time_title">Date Time Synchronization</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_set">Set</string>
+    <string name="action_date_time">Date Time Setting</string>
+    <string name="nav_item_sensors">Sensors</string>
+    <string name="nav_item_relay">Relay</string>
+    <string name="nav_item_date_time">Date and Time</string>
+    <string name="nav_item_about">About...</string>
+    <string name="drawer_header_text">Smart Plug</string>
+    <string name="alarm_ok">OK</string>
+    <string name="alarm_caution">Caution</string>
+    <string name="alarm_danger">Danger</string>
+    <string name="application_title_short">Smart Plug</string>
+
+
+</resources>

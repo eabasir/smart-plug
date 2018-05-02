@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Start at:"
+                    android:textColor="#000000"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Set New Start Date"
+                    android:textColor="#383838"
+                    android:id="@+id/txtStartDate"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Set New Start Time"
+                    android:textColor="#6a6a6a"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txtStartTime" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/primary_dark"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/btnEditStart"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                       >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Edit"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/setting"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Finish at:"
+                    android:textColor="#000000"
+                    android:id="@+id/textView3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Set New Finish Date"
+                    android:textColor="#383838"
+                    android:id="@+id/txtFinishDate"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Set New Finish Time"
+                    android:textColor="#6a6a6a"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txtFinishTime" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/primary_dark"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/btnEditFinish"
+                    android:clickable="true"
+                    >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Edit"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/setting"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:weightSum="1"
+                android:id="@+id/rgRepType"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Once"
+                    android:id="@+id/rbOnce"
+                    android:checked="true"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="15dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily"
+                    android:id="@+id/rbDaily"
+                    android:checked="false"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="15dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly"
+                    android:id="@+id/rbWeekly"
+                    android:checked="false"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="15dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly"
+                    android:id="@+id/rbMonthly"
+                    android:checked="false"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="15dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
